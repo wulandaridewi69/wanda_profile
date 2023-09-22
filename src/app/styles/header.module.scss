@@ -1,0 +1,44 @@
+.headers {
+    background-image: url('../assets/header.png');
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+    border: 335px rgba(0, 0, 0, 0.5);
+    height: 22%;
+
+    .menuHeader {
+        color: #EDE6E6; 
+        font-size: 20px; 
+        font-family: Inter; 
+        font-weight: 700; 
+        word-wrap: break-word;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+}
+
+$breakpoint-ipad: 820px;
+@media (min-width: $breakpoint-ipad) {
+    .headers {
+        height: 6%;
+    
+        .menuHeader {
+            font-size: 15px;
+        }
+    }
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+    .headers {
+        height: 21%;
+    
+        .menuHeader {
+            font-size: 13px;
+        }
+    }
+}
