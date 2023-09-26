@@ -22,7 +22,7 @@
 }
 
 $breakpoint-ipad: 820px;
-@media (min-width: $breakpoint-ipad) {
+@media (min-width: $breakpoint-ipad){
     .headers {
         height: 6%;
     
@@ -33,7 +33,7 @@ $breakpoint-ipad: 820px;
 }
 
 $breakpoint-tablet: 768px;
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-tablet){
     .headers {
         height: 21%;
     
