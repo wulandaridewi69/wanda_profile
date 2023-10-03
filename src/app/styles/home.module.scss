@@ -1,0 +1,96 @@
+.home {
+    background: #1D011E;
+
+    .titleBaloon {
+        display: flex;
+
+        .fontBgTop  {
+            position: relative;
+            margin: 15% 2%;
+    
+            h2 {
+                color: #FFF;
+                font-family: Libre Bodoni;
+                font-size: 128px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        
+            h4 {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        } 
+        .baloon {
+            z-index: 1;
+            position: absolute;
+    
+            .yellowBaloon {
+                width: 446px;
+                height: 546px;
+                position: relative;
+                top: 265px;
+                right: -175%;
+                box-shadow: 0 #787676;
+            }
+            .blueBaloon {
+                position: relative;
+                top: -570px;
+                right: -230%;
+                width: 312px;
+                height: 405px;
+                flex-shrink: 0;
+                box-shadow: 0 #212020;
+            }
+        }
+    }      
+
+    .background_1 {
+        position: absolute;
+        top: 0;
+    }
+
+    .tech {
+        margin-top: 2em;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: -webkit-fill-available;
+            left: 0;
+        }
+        .techLists {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 16% 140px;
+        }
+        .techLists p {
+            padding: 5px 15px;
+            width: fit-content;
+            height: auto;
+            border-radius: 50px;
+            background: #EDE6E6;
+            position: relative;
+        }
+        h3 {
+            color: #EDE6E6;
+            font-family: Libre Bodoni;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: relative;
+            text-align: center;
+            margin: 150px 200px;
+        }
+    }
+    
+    
+}
