@@ -1,5 +1,6 @@
 .home {
     background: #1D011E;
+    
 
     .titleBaloon {
         display: flex;
@@ -53,11 +54,13 @@
     .background_1 {
         position: absolute;
         top: 0;
+        width: -webkit-fill-available;
     }
 
     .tech {
         margin-top: 2em;
         position: relative;
+        height: 45em;
 
         img {
             position: absolute;
@@ -91,6 +94,176 @@
             margin: 150px 200px;
         }
     }
+
+    .profile {
+        height: 32em;
+
+        h3 {
+            color: #EDE6E6;
+            font-family: Libre Bodoni;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: relative;
+            text-align: center;
+            margin: 150px 200px;
+            top: -435px;
+        }
+        .profileList {
+            align-items: center;
+            display: flex;
+            color: #FDDAB1;
+            font-family: Inter;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            gap: 55px;
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            top: -595px;
+        }
+
+    }
+
+    .projects {
+        h3 {
+            color: #EDE6E6;
+            font-family: Libre Bodoni;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: relative;
+            text-align: center;
+            margin: 150px 200px;
+            top: -435px;
+        }
+        .miniProjects {
+            display: flex;
+            gap: 90px;
+            justify-content: center;
+            margin-top: -25%;
+
+            .projectN {
+                .allProject {}
+                p {
+                    flex-direction: column;
+                    display: flex;
+                    color: #FFFAFA;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    background-image: url(/_next/static/media/projects-1.54ac40e5.png);
+                    width: 308.929px;
+                    height: 433.54px;
+                    border-radius: 30px;
+                    justify-content: center;
+                }
+            }
+
+            .hoverBox {
+                position: relative;
+                top: -500px;
+
+                .yellowBox:hover {
+                    width: 302.844px;
+                    height: 278.349px;
+                    transform: rotate(26.978deg);
+                    border-radius: 30px;
+                    background: linear-gradient(0deg, #FDDAB1 0%, #FDDAB1 100%), 
+                    linear-gradient(0deg, #4B7A9B 0%, #4B7A9B 100%), #4B7A9B;
+                }
+                .purpleBox:hover {
+                    width: 302.459px;
+                    height: 278.688px;
+                    transform: rotate(24.365deg);
+                    border-radius: 30px;
+                    background: linear-gradient(0deg, #D18EDC 0%, #D18EDC 100%), 
+                    linear-gradient(0deg, #4B7A9B 0%, #4B7A9B 100%), #4B7A9B;
+                }
+            }
+        }
+    }
+
+    .experience {
+        .institutionList {
+            margin-top: -22em;
+            .institution {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                row-gap: 50px;
+
+                h5 {
+                    align-items: center;
+                    display: flex;
+                    color: #FDDAB1;
+                    font-family: Inter;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    justify-content: center;
+                    margin-top: 15px;
+                }
+                p {
+                    color: #FCF5F5;
+                    text-align: justify;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 2em;
+                    word-break: break-all;
+                    justify-content: center;
+                    display: flex;
+                    margin: auto 9.8%;
+                }
+                a {
+                    padding: 12px 25px;
+                    width: fit-content;
+                    height: fit-content;
+                    border-radius: 50px;
+                    background: #4B7A9B;
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    line-height: normal;
+                    position: relative;
+                    right: -34%;
+                }
+            }
+        }
+        h3 {
+            color: #EDE6E6;
+            font-family: Libre Bodoni;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: relative;
+            text-align: center;
+            margin: 150px 200px;
+            top: -510px;
+        }
+    }
     
     
 }
+
+// display: block;
+//     content: "";
+//     width: 15.5px;
+//     border: 17px solid #CEC5FB;
+//     border-radius: 50px;
+//     position: absolute;
+//     z-index: -1;
+//     margin-top: -35px;
+//     transform: rotate(60deg);
+//     margin-left: -15px;

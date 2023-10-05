@@ -6,6 +6,11 @@ import Background_1 from '../app/assets/bg-wanda.png';
 import YellowBaloon from '../app/assets/yellow-ballon.png';
 import BlueBallon from '../app/assets/blue-baloon.png';
 import Tech from '../app/assets/tech-stack.png';
+import Profile from '../app/assets/profile.png';
+import Project from '../app/assets/project.png';
+import Experience from '../app/assets/experience.png';
+import Gloding from '../app/assets/gloding.png';
+import Alterra from '../app/assets/alterra.png';
 
 export default function Home() {
   return (
@@ -58,7 +63,7 @@ export default function Home() {
         </div>
 
         <div className={styles.profile}>
-          <Image src={Tech}/>
+          <Image src={Profile}/>
           <h3>P R O F I L E</h3>
           <div className={styles.profileList}>
             <p>Profile</p>
@@ -71,6 +76,65 @@ export default function Home() {
             </svg>
             <p>Education</p>
           </div>
+        </div>
+
+        <div className={styles.projects}>
+          <Image src={Project}/>
+          <h3>P R O J E C T S</h3> 
+          <div className={styles.miniProjects}>
+            <div className={styles.projectN}>
+              <div className={styles.allProjectN} >
+              <p>Portfolio</p>
+              </div>
+              <div className={styles.hoverBox}>
+                <div className={styles.purpleBox}/>
+                <div className={styles.yellowBox}/>
+              </div>
+            </div>
+            <div className={styles.projectN}>
+              <div className={styles.allProjectN} >
+              <p>Comic View</p>
+              </div>
+            </div>
+            <div className={styles.projectN}>
+              <div className={styles.allProjectN} >
+              <p>-</p>
+              </div>
+            </div>
+          </div>         
+        </div>
+
+        <div className={styles.experience}>
+          <Image src={Experience}/>
+          <h3>E X P E R I E N C E D</h3> 
+          <div className={styles.institutionList}>
+            <div className={styles.institution}>
+              <div>
+                <Image src={Gloding} />
+                <h5>2022 - 2023, Japan</h5>
+              </div>
+              <p>Gloding Inc. is a consulting + creating company specializing in IT, made up of a 
+                  team that transcends national borders, including Japan, Indonesia, France, the 
+                  United States, and the United Kingdom. Our members with a global perspective 
+                  provide support in every phase, from various types of consulting to realize 
+                  business improvements, to system design and construction, to post-installation 
+                  operation and maintenance.</p>
+              <a> Detail more ...</a>
+            </div>
+            <div className={styles.institution}>
+              <div>
+                <Image src={Alterra} />
+                <h5>2022, Indonesia</h5>
+              </div>
+              <p>Gloding Inc. is a consulting + creating company specializing in IT, made up of a 
+                  team that transcends national borders, including Japan, Indonesia, France, the 
+                  United States, and the United Kingdom. Our members with a global perspective 
+                  provide support in every phase, from various types of consulting to realize 
+                  business improvements, to system design and construction, to post-installation 
+                  operation and maintenance.</p>
+              <a> Detail more ...</a>
+            </div>
+          </div>         
         </div>
             
     </main>
