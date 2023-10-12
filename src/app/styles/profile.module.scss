@@ -1,0 +1,29 @@
+.title {
+    border-color: rgb(254 215 170);
+    .logo {
+        margin: auto;
+    }
+    h1 {
+        color: #4B7A9B;
+        font-family: Inter;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }  
+    h5, p, a {
+        // color: #FCF5F5;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    h5 {
+        font-size: 32px;
+    }
+    p {
+        word-break: break-all;
+    }
+    
+}

@@ -1,7 +1,4 @@
-import Image from 'next/image';
-
 import Projects from '../components/Project';
-import styles from '../styles/experienced.module.scss';
 
 // Image
 import assetsmirai from '../assets/mirai.png';
