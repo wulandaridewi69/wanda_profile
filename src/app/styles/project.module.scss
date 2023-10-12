@@ -28,12 +28,12 @@
         gap: 40px;
         margin: 3% 5%;
         .projectImg {
-            width: 35%;
+            width: -webkit-fill-available;
             height: auto;
             border-radius: 40px;
         }
         .miniLogo {
-            width: 25%;
+            width: 30%;
             height: auto;
         }
         h2 {
@@ -54,6 +54,10 @@
             font-weight: normal;
             line-height: normal;
             margin-top: 15px;
+
+            span {
+                color: #FDDAB1;
+            }
         }
         .description {
             margin-top: 20px;

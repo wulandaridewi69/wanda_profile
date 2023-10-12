@@ -11,9 +11,14 @@ const Project = (props) => {
 
       {props.projects.map((item) => {
         return <div className={styles.project}>
-          <Image src={item.image} className={styles.projectImg} />
+          <a href={item.url}>
+            <Image src={item.image} className={styles.projectImg} />
+          </a>
           <div>
             <Image src={item.logo_project} className={styles.miniLogo} />
+            <a href={item.github}>
+              <p>Github url <span>(Click me)</span></p>
+            </a>
             <div className={styles.description}>
               <h2>About Project</h2>
               <p>{item.description}</p>
