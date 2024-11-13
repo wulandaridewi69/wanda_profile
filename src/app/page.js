@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import styles from '../app/styles/home.module.scss';
 import Rating from '../app/components/Rating';
@@ -216,7 +215,7 @@ const Home = () => {
 
         <div className={styles.bgYellow}>
           <h4> ALL ABOUT</h4>
-          <div className={''}>
+          <div className={styles.imgYellow}>
             <div className={styles.allAbout}>
               <div className={styles.allAboutImg}>
                 <a href='./experience' className={styles.href}>
@@ -230,6 +229,8 @@ const Home = () => {
                   <Image src={Website} className={''} />
                 </a>
               </div>
+              </div>
+              <div className={styles.allAbout}>
               <div className={styles.allAboutImg}>
                 <a href='./design' className={styles.href}>
                   <p className={styles.titleTech}>DESIGN</p>

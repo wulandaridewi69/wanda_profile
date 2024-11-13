@@ -108,18 +108,23 @@
 
     .bgYellow {
         background: #FDDAB0;
-        height: fit-content;       
+        height: fit-content;  
         
-        .allAbout {
-            display: flex;
-            flex-flow: wrap;
-
-            .allAboutImg {
-                width: 25%;
-                padding: 10px 10px;
-
-                img {
-                    height: 200px;
+        .imgYellow {
+            padding-bottom: 5%;
+            
+            .allAbout {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+    
+                .allAboutImg {
+                    width: 25%;
+                    padding: 10px 10px;
+    
+                    img {
+                        height: 200px;
+                    }
                 }
             }
         }
@@ -220,7 +225,7 @@
         line-height: normal;
         text-align: center;
         margin: 5% auto;
-        padding-top: 5%;
+        // padding-top: 5%;
     }
 
     .secAct {
