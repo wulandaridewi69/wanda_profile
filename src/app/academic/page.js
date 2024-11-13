@@ -104,7 +104,7 @@ const training = {
     ]
 }
 
-const Portofolio = () => {
+const Projects = () => {
     return (
         <>
             <div>
@@ -120,7 +120,7 @@ const Portofolio = () => {
                         </defs>
                     </svg>
                 </div>
-                <div className={styles.portofolio}>
+                <div className={styles.Projects}>
                     {data.result.map((item) => {
                         return <LongBox key={item.id}
                             id={item.id}
@@ -183,7 +183,9 @@ const Portofolio = () => {
                                 </div>
                                 <div>
                                     <p className={styles.description}>{item.description}</p>
-                                    <button>Projects</button>
+                                    <a href='../website'>
+                                        <button>Projects</button>
+                                    </a>
                                 </div>
                             </div>
                         </LongBox>
@@ -194,4 +196,4 @@ const Portofolio = () => {
     )
 }
 
-export default Portofolio;
+export default Projects;
