@@ -216,27 +216,27 @@ const Home = () => {
 
         <div className={styles.bgYellow}>
           <h4> ALL ABOUT</h4>
-          <div className={'container'}>
-            <div className={'row'}>
-              <div className={'col-md-4 col-sm-12'}>
+          <div className={''}>
+            <div className={styles.allAbout}>
+              <div className={styles.allAboutImg}>
                 <a href='./experience' className={styles.href}>
                   <p className={styles.titleTech}>TECH STACK</p>
                   <Image src={About} className={''} />
                 </a>
               </div>
-              <div className={'col-md-4 col-sm-12'}>
+              <div className={styles.allAboutImg}>
                 <a href='./website' className={styles.href}>
                   <p className={styles.titleTech}>WEBSITE</p>
                   <Image src={Website} className={''} />
                 </a>
               </div>
-              <div className={'col-md-4 col-sm-12'}>
+              <div className={styles.allAboutImg}>
                 <a href='./design' className={styles.href}>
                   <p className={styles.titleTech}>DESIGN</p>
                   <Image src={Design} className={''} />
                 </a>
               </div>
-              <div className={'col-md-4 col-sm-12'}>
+              <div className={styles.allAboutImg}>
                 <a href='./website' className={styles.href}>
                   <p className={styles.titleTech}>ACADEMIC</p>
                   <Image src={Academic} className={''} />
