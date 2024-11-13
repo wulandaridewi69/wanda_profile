@@ -1,6 +1,5 @@
 .home {
-    background: #1D011E;
-    
+    background: #1D011E;    
 
     .titleBaloon {
         display: flex;
@@ -8,6 +7,16 @@
         .fontBgTop  {
             position: relative;
             margin: 15% 2%;
+
+            .creative {
+                color: #FFF;
+                text-align: justify;
+                font-family: Inter;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
     
             h2 {
                 color: #FFF;
@@ -35,21 +44,166 @@
                 width: 446px;
                 height: 546px;
                 position: relative;
-                top: 265px;
-                right: -175%;
+                top: 250px;
+                left: 170%;
                 box-shadow: 0 #787676;
             }
             .blueBaloon {
                 position: relative;
                 top: -570px;
-                right: -230%;
+                left: 200%;
                 width: 312px;
                 height: 405px;
                 flex-shrink: 0;
                 box-shadow: 0 #212020;
             }
+            @media screen and (max-width: 1024px) {
+                .yellowBaloon {
+                    width: 446px;
+                    height: 546px;
+                    position: relative;
+                    top: 250px;
+                    left: 100%;
+                    box-shadow: 0 #787676;
+                }
+                .blueBaloon {
+                    position: relative;
+                    top: -570px;
+                    left: 135%;
+                    width: 312px;
+                    height: 405px;
+                    flex-shrink: 0;
+                    box-shadow: 0 #212020;
+                }
+            }
         }
-    }      
+    }
+    
+    .dewi {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        padding: 1px 10%;
+
+        h3 {
+            color: #EDE6E6;
+            font-family: Libre Bodoni;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            opacity: 0.6;
+            margin-top: -22px;
+            height: 55%;
+        }
+
+        p {
+            color: #FFF;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+
+    .bgYellow {
+        background: #FDDAB0;
+        height: fit-content;       
+        
+        .allAbout {
+            display: flex;
+            flex-flow: wrap;
+
+            .allAboutImg {
+                width: 25%;
+                padding: 10px 10px;
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 5% auto;
+            padding-top: 5%;
+        }
+        .href {
+            display: flex;
+            // height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .titleTech {
+            position: absolute;
+            width: fit-content;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #1D011E;
+            font-family: Yellowtail;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .image {
+            background-image: url('../assets/profile.png');
+            width: 50%;
+        }
+
+        .design {
+            margin-left: 35px;
+            padding-bottom: 100%;
+           
+            text-align: center;
+            height: auto;
+            width: auto;
+
+            p {
+                color: #D18EDC;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+        }
+        .other {
+            background-image: url('../assets/profile.png');
+            text-align: center;
+            padding: 20%;
+            height: auto;
+            width: auto;
+            p {
+                color: #D18EDC;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+
+        }
+
+        .skill {
+            margin: 10% auto;
+            background-image: url('../assets/profile.png');
+            height: 245%;
+            width: 47%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            p {
+                color: #D18EDC;
+                font-weight: bolder;
+                font-size: 36px;
+            }
+        }
+    }
 
     .background_1 {
         position: absolute;
@@ -57,213 +211,150 @@
         width: -webkit-fill-available;
     }
 
-    .tech {
-        margin-top: 2em;
-        position: relative;
-        height: 45em;
+    .techStack {
+        color: #FDDAB0;
+        font-family: "Libre Bodoni";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        text-align: center;
+        margin: 5% auto;
+        padding-top: 5%;
+    }
 
-        img {
-            position: absolute;
-            width: -webkit-fill-available;
-            left: 0;
-        }
-        .techLists {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 16% 140px;
-        }
-        .techLists p {
-            padding: 5px 15px;
-            width: fit-content;
-            height: auto;
-            border-radius: 50px;
-            background: #EDE6E6;
-            position: relative;
-        }
-        h3 {
-            color: #EDE6E6;
-            font-family: Libre Bodoni;
-            font-size: 100px;
+    .secAct {
+        background-color: #6A4F5F;
+
+        .activities {
+            color: #1D011E;
+            font-family: "Libre Bodoni";
+            font-size: 72px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: bold;
             line-height: normal;
-            position: relative;
             text-align: center;
-            margin: 150px 200px;
+            margin: 5% auto;
+            padding-top: 5%;
+
         }
     }
 
-    .profile {
-        height: 32em;
+    .ratings {
+        row-gap: 25px;
+        width: -webkit-fill-available;
+        column-gap: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-        h3 {
-            color: #EDE6E6;
-            font-family: Libre Bodoni;
-            font-size: 100px;
+    .lastSec {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+
+        .portofolio {
+            color: #FDDAB0;
+            font-family: "Libre Bodoni";
+            font-size: 72px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: bold;
             line-height: normal;
-            position: relative;
             text-align: center;
-            margin: 150px 200px;
-            top: -435px;
         }
-        .profileList {
-            align-items: center;
-            display: flex;
-            color: #FDDAB1;
+        .descPorto {
+            color: #FFF;
+            text-align: center;
             font-family: Inter;
-            font-size: 28px;
+            font-size: 20px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: bold;
             line-height: normal;
-            gap: 55px;
-            position: relative;
-            justify-content: center;
-            text-align: center;
-            top: -595px;
+            margin-top: 4rem;
+            margin-bottom: 7rem;
         }
-
-    }
-
-    .projects {
-        h3 {
-            color: #EDE6E6;
-            font-family: Libre Bodoni;
-            font-size: 100px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            position: relative;
-            text-align: center;
-            margin: 150px 200px;
-            top: -435px;
-        }
-        .miniProjects {
+        .detailMore {
+            padding: 20px 60px;
+            width: fit-content;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 38px;
+            background: #4B7A9B;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
             display: flex;
-            gap: 90px;
             justify-content: center;
-            margin-top: -25%;
-
-            .projectN {
-                .allProject {}
-                p {
-                    flex-direction: column;
-                    display: flex;
-                    color: #FFFAFA;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 36px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    background-image: url('../assets/projects-1.png');
-                    width: 308.929px;
-                    height: 433.54px;
-                    border-radius: 30px;
-                    justify-content: center;
-                }
-            }
-
-            .hoverBox {
-                position: relative;
-                top: -500px;
-
-                .yellowBox:hover {
-                    width: 302.844px;
-                    height: 278.349px;
-                    transform: rotate(26.978deg);
-                    border-radius: 30px;
-                    background: linear-gradient(0deg, #FDDAB1 0%, #FDDAB1 100%), 
-                    linear-gradient(0deg, #4B7A9B 0%, #4B7A9B 100%), #4B7A9B;
-                }
-                .purpleBox:hover {
-                    width: 302.459px;
-                    height: 278.688px;
-                    transform: rotate(24.365deg);
-                    border-radius: 30px;
-                    background: linear-gradient(0deg, #D18EDC 0%, #D18EDC 100%), 
-                    linear-gradient(0deg, #4B7A9B 0%, #4B7A9B 100%), #4B7A9B;
-                }
-            }
+            justify-items: center;
+            align-items: center;
         }
     }
 
-    .experience {
-        .institutionList {
-            margin-top: -22em;
-            .institution {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                row-gap: 50px;
-
-                h5 {
-                    align-items: center;
-                    display: flex;
-                    color: #FDDAB1;
-                    font-family: Inter;
-                    font-size: 28px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    justify-content: center;
-                    margin-top: 15px;
-                }
-                p {
-                    color: #FCF5F5;
-                    text-align: justify;
-                    font-family: Inter;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 2em;
-                    word-break: break-all;
-                    justify-content: center;
-                    display: flex;
-                    margin: auto 9.8%;
-                }
-                a {
-                    padding: 12px 25px;
-                    width: fit-content;
-                    height: fit-content;
-                    border-radius: 50px;
-                    background: #4B7A9B;
-                    color: #FFF;
-                    font-family: Inter;
-                    font-size: 18px;
-                    font-style: normal;
-                    line-height: normal;
-                    position: relative;
-                    right: -34%;
-                }
-            }
-        }
-        h3 {
-            color: #EDE6E6;
-            font-family: Libre Bodoni;
-            font-size: 100px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            position: relative;
-            text-align: center;
-            margin: 150px 200px;
-            top: -510px;
-        }
-    }
-    
     
 }
 
-// display: block;
-//     content: "";
-//     width: 15.5px;
-//     border: 17px solid #CEC5FB;
-//     border-radius: 50px;
-//     position: absolute;
-//     z-index: -1;
-//     margin-top: -35px;
-//     transform: rotate(60deg);
-//     margin-left: -15px;
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet){
+    .home {
+        .titleBaloon {    
+            .fontBgTop  {    
+                margin: 11% 2%;
+
+                .creative {
+                    font-size: 40px;
+                }
+
+                h2 {
+                    font-size: 90px;
+                }
+
+                h4 {
+                    font-size: 45px;
+                    font-weight: 400;
+                }
+            }
+
+            .baloon {
+                .blueBaloon {
+                    position: absolute;
+                    top: 10px;
+                    width: 145px;
+                    height: 200px;
+                    left: 180%;
+                }
+                .yellowBaloon {
+                    width: 245px;
+                    height: 320px;
+                    position: relative;
+                    top: 140px;
+                    left: 205%;
+                }
+            }
+        }
+
+        .groupHome {
+            .dewi {
+                padding: 1px 5%;
+                gap: 2rem;
+
+                h3 {
+                    font-size: 60px;
+                    margin-top: -15px;
+                    height: 60%;
+                }
+    
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .bgYellow {
+                h4 {
+                    font-size: 60px;
+                }
+            }
+
+            
+        }
+    }
+}

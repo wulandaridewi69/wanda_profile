@@ -1,6 +1,8 @@
 import styles from '../styles/profile.module.scss';
+import Ub from '../assets/logo-ub.png';
+import Image from 'next/image';
 
-const Me = () => {
+const Me = (props) => {
     return (
         <div className={styles.title}>
             <h1>Education</h1>
@@ -13,22 +15,6 @@ const Me = () => {
                     </linearGradient>
                 </defs>
             </svg>
-
-            <div>
-                <Image src={Ub} className={styles.logo} />
-                <h4>Universitas Brawijaya</h4>
-                <p>2021</p>
-                <div>
-                    <h5>Postgraduate</h5>
-                    <p>Medical Physics</p>
-                    <a href='https://iopscience.iop.org/article/10.1088/1742-6596/1796/1/012049'>
-                        Reasearch :
-                        <p>Identification of electrical impedance correlation using interdigital transducer (IDT) electrode and blood
-                            glucose by giving variations of sugar concentration to male mice</p>
-                    </a>
-                    <p>GPA : 3.66</p>
-                </div>
-            </div>
 
         </div>
     )
