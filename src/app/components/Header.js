@@ -1,15 +1,19 @@
+import Link from 'next/link'
+
 import styles from '../styles/header.module.scss';
 
-export default function Header () {
+const Header = () => {
     return (
         <div className={styles.headers}>
-        <div className={styles.menuHeader}>
-            <a>INTRODUCTION</a>
-            <a>PROFILE</a>
-            <a>SKILLS</a>
-            <a>PROJECTS</a>
-            <a>SOCIAL MEDIA</a>
-        </div>
+            <div className={styles.menuHeader}>
+                <Link href='/'>HOME</Link>
+                <Link href='/academic'>ACADEMIC</Link>                
+                <Link href='/experienced'>EXPERIENCED</Link>
+                <Link href='/projects'>PROJECT</Link>
+                <Link href='/feedback'>FEEDBACK</Link>
+            </div>
         </div>
     )
 }
+
+export default Header;

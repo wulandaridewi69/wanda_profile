@@ -1,143 +1,271 @@
 import Image from 'next/image';
 
-import styles from '../app/styles/home.module.scss'
+import styles from '../app/styles/home.module.scss';
+import Rating from '../app/components/Rating';
+import Activities from '../app/components/Activities';
 
 import Background_1 from '../app/assets/bg-wanda.png';
 import YellowBaloon from '../app/assets/yellow-ballon.png';
 import BlueBallon from '../app/assets/blue-baloon.png';
-import Tech from '../app/assets/tech-stack.png';
 import Profile from '../app/assets/profile.png';
-import Project from '../app/assets/project.png';
-import Experience from '../app/assets/experience.png';
-import Gloding from '../app/assets/gloding.png';
-import Alterra from '../app/assets/alterra.png';
+import About from '../app/assets/about.png';
+import Academic from '../app/assets/bg-yellow-2.png';
+import Website from '../app/assets/bg-yellow-3.png';
+import Design from '../app/assets/bg-yellow-4.png';
+import Coding from '../app/assets/code.png';
+import Youtube from '../app/assets/youtube.png';
+// import Lynk from '../app/assets/lynkid.png';
+// import Etsy from '../app/assets/etsy.png';
+// import Amazon from '../app/assets/amazon.png';
+// import Tokopedia from '../app/assets/tokopedia.png';
+// import Shopee from '../app/assets/shopee.png';
+// import Lazada from '../app/assets/lazada.png';
 
-export default function Home() {
+
+const dataTech = {
+  result: [
+    {
+      id: 1,
+      title: 'HTML5',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 2,
+      title: 'React.js',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 3,
+      title: 'NEXT.js',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 4,
+      title: 'Javascript',
+      value: 2,
+      description: ''
+    },
+    {
+      id: 5,
+      title: 'JQuerry',
+      value: 1,
+      description: ''
+    },
+    {
+      id: 6,
+      title: 'SEO',
+      value: 2,
+      description: ''
+    },
+    {
+      id: 7,
+      title: 'CSS3',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 8,
+      title: 'SAAS',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 9,
+      title: 'Boostrap',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 10,
+      title: 'Tailwind',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 11,
+      title: 'Figma',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 12,
+      title: 'Postman',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 13,
+      title: 'RestAPI',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 14,
+      title: 'Responsive',
+      value: 3,
+      description: ''
+    },
+    {
+      id: 15,
+      title: 'Git/Github',
+      value: 3,
+      description: ''
+    }
+  ]
+};
+
+const dataActivities = {
+  result: [
+    {
+      id: 1,
+      title: 'Frontend Engineer',
+      image: Coding,
+      description: '',
+      link: ''
+    },
+    {
+      id: 2,
+      title: 'Youtube',
+      image: Youtube,
+      description: '',
+      link: 'https://www.youtube.com/@wandakids18/videos'
+    }
+    // {
+    //   id: 3,
+    //   title: 'Lynk Id',
+    //   image: Lynk,
+    //   description: '',
+    //   link: 'https://lynk.id/wanda18'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Etsy (soon)',
+    //   image: Etsy,
+    //   description: '',
+    //   link: ''
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Amazon (soon)',
+    //   image: Amazon,
+    //   description: '',
+    //   link: ''
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Tokopedia (soon)',
+    //   image: Tokopedia,
+    //   description: '',
+    //   link: ''
+    // },
+    // {
+    //   id: 7,
+    //   title: 'Shopee (soon)',
+    //   image: Shopee,
+    //   description: '',
+    //   link: ''
+    // },
+    // {
+    //   id: 8,
+    //   title: 'Lazada (soon)',
+    //   image: Lazada,
+    //   description: '',
+    //   link: ''
+    // }
+  ]
+};
+
+
+const Home = () => {
   return (
     <main className={`flex min-h-screen flex-col justify-between ${styles.home}`}>
+
+      <div>
+        <Image src={Background_1} className={styles.background_1} />
+        <div className={styles.titleBaloon}>
+          <div className={styles.fontBgTop}>
+            <p className={styles.creative}>CREATIVE BY</p>
+            <h2>W A N D A</h2>
+            <h4>PORTFOLIO</h4>
+          </div>
+          <div className={styles.baloon}>
+            <Image src={YellowBaloon} className={styles.yellowBaloon} />
+            <Image src={BlueBallon} className={styles.blueBaloon} />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.groupHome}>
+        <div className={`grid grid-cols-3 gap-4 ${styles.dewi} mx-6`}>
+          <div>
+            <Image src={Profile} />
+          </div>
+          <div className="col-span-2">
+            <h3>Dewi<br />Wulandari</h3>
+            <p>Hi, you can call me Wanda. I live in Malang.
+              I’ve specialized in Frontend using React.js, Next.js, Figma, and other stack related. About me,
+              I joined at Gloding inc in October 2022 until September 2023. When I was at that company I learned about SEO,
+              create layout features using Java, then develop CSS and SCSS. I always keep learning and develop my soft skill,
+              especially using React.js and Next.js</p>
+          </div>
+        </div>
+
+        <div className={styles.bgYellow}>
+          <h4> ALL ABOUT</h4>
+          <div className={styles.imgYellow}>
+            <div className={styles.allAbout}>
+              <div className={styles.allAboutImg}>
+                <a href='./experience' className={styles.href}>
+                  <p className={styles.titleTech}>TECH STACK</p>
+                  <Image src={About} className={''} />
+                </a>
+              </div>
+              <div className={styles.allAboutImg}>
+                <a href='./website' className={styles.href}>
+                  <p className={styles.titleTech}>WEBSITE</p>
+                  <Image src={Website} className={''} />
+                </a>
+              </div>
+              </div>
+              <div className={styles.allAbout}>
+              <div className={styles.allAboutImg}>
+                <a href='./design' className={styles.href}>
+                  <p className={styles.titleTech}>DESIGN</p>
+                  <Image src={Design} className={''} />
+                </a>
+              </div>
+              <div className={styles.allAboutImg}>
+                <a href='./website' className={styles.href}>
+                  <p className={styles.titleTech}>ACADEMIC</p>
+                  <Image src={Academic} className={''} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         <div>
-          <Image src={Background_1} className={styles.background_1}/>
-          <div className={styles.titleBaloon}>
-            <div className={styles.fontBgTop}>
-              <h2>W A N D A</h2>
-              <h4>PORTFOLIO</h4>
-            </div>
-            <div className={styles.baloon}>
-              <Image src={YellowBaloon} className={styles.yellowBaloon}/>
-              <Image src={BlueBallon} className={styles.blueBaloon}/>
-            </div>
-          </div>
+          <h4 className={styles.techStack}>TECH STACK</h4>
+          <Rating className={styles.ratings} data={dataTech} />
         </div>
 
-        <div className={styles.tech}>
-          <Image src={Tech}/>
-          <h3>T E C H S T A C K</h3>
-          <div className={styles.techLists}>
-            <p>Heroku</p>
-            <p>Vercel</p>
-            <p>Payara</p>
-            <p>Markdown</p>
-            <p>HTML5</p>
-            <p>React.js</p>
-            <p>Next.js</p>
-            <p>CSS3</p>
-            <p>SASS</p>
-            <p>Tailwind</p>
-            <p>Boostrap</p>
-            <p>MUI</p>
-            <p>Redux</p>
-            <p>GIT</p>
-            <p>Github</p>
-            <p>Figma</p>
-            <p>VS Code IDE</p>
-            <p>Netbeans IDE</p>
-            <p>Sourch Tree</p>
-            <p>Atlassian (Jira)</p>
-            <p>Javascript</p>
-            <p>Jquerry</p>
-            <p>RESTful API</p>
-            <p>Postman</p>
-            <p>NPM</p>
-            <p>Slack</p>
-          </div>
+        <div className={styles.secAct}>
+          <h4 className={styles.activities}>CURRENT ACTIVITIES</h4>
+          <Activities data={dataActivities} />
         </div>
 
-        <div className={styles.profile}>
-          <Image src={Profile}/>
-          <h3>P R O F I L E</h3>
-          <div className={styles.profileList}>
-            <p>Profile</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#908D8F"/>
-            </svg>
-            <p>Skill</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#908D8F"/>
-            </svg>
-            <p>Education</p>
-          </div>
+        <div className={`my-20 ${styles.lastSec}`}>
+          <h4 className={styles.portofolio}> PORTOFOLIO</h4>
+          <p className={styles.descPorto}>This is my portfolio when I pursuing education in the academic field and non-academic  fields, and training too</p>
+          <div className={styles.detailMore}>Detail more</div>
         </div>
-
-        <div className={styles.projects}>
-          <Image src={Project}/>
-          <h3>P R O J E C T S</h3> 
-          <div className={styles.miniProjects}>
-            <div className={styles.projectN}>
-              <div className={styles.allProjectN} >
-              <p>Portfolio</p>
-              </div>
-              <div className={styles.hoverBox}>
-                <div className={styles.purpleBox}/>
-                <div className={styles.yellowBox}/>
-              </div>
-            </div>
-            <div className={styles.projectN}>
-              <div className={styles.allProjectN} >
-              <p>Comic View</p>
-              </div>
-            </div>
-            <div className={styles.projectN}>
-              <div className={styles.allProjectN} >
-              <p>-</p>
-              </div>
-            </div>
-          </div>         
-        </div>
-
-        <div className={styles.experience}>
-          <Image src={Experience}/>
-          <h3>E X P E R I E N C E D</h3> 
-          <div className={styles.institutionList}>
-            <div className={styles.institution}>
-              <div>
-                <Image src={Gloding} />
-                <h5>2022 - 2023, Japan</h5>
-              </div>
-              <p>Gloding Inc. is a consulting + creating company specializing in IT, made up of a 
-                  team that transcends national borders, including Japan, Indonesia, France, the 
-                  United States, and the United Kingdom. Our members with a global perspective 
-                  provide support in every phase, from various types of consulting to realize 
-                  business improvements, to system design and construction, to post-installation 
-                  operation and maintenance.</p>
-              <a> Detail more ...</a>
-            </div>
-            <div className={styles.institution}>
-              <div>
-                <Image src={Alterra} />
-                <h5>2022, Indonesia</h5>
-              </div>
-              <p>Gloding Inc. is a consulting + creating company specializing in IT, made up of a 
-                  team that transcends national borders, including Japan, Indonesia, France, the 
-                  United States, and the United Kingdom. Our members with a global perspective 
-                  provide support in every phase, from various types of consulting to realize 
-                  business improvements, to system design and construction, to post-installation 
-                  operation and maintenance.</p>
-              <a> Detail more ...</a>
-            </div>
-          </div>         
-        </div>
-            
-    </main>
+      </div>
+    </main >
   )
 }
 
+export default Home;

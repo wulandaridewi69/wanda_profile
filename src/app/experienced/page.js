@@ -1,156 +1,156 @@
-import Projects from '../components/Project';
+import Image from 'next/image';
 
-// Image
-import assetsmirai from '../assets/mirai.png';
-import projectmirai from '../assets/project-mirai.png';
-import assetsamimono from '../assets/amimono.png';
-import projectamimono from '../assets/project_amimono.png';
-import assetsvogue from '../assets/vogue.png';
-import projectvogue from '../assets/project_vogue.png';
-import assetsseo from '../assets/seo.jpg';
-import gloding from '../assets/gloding.png';
-import alterra from '../assets/alterra.png';
-import mnroom from '../assets/mn-room.png';
-import logomn from '../assets/logo-mn.png';
-import logogo from '../assets/logo-gomeet.png';
-import gomeet from '../assets/gomeet.png';
-import logose from '../assets/logo-seebooks.png';
-import seebooks from '../assets/seebooks.png';
-import todo from '../assets/todo.png';
-import logoto from '../assets/logo-todo.png';
-import progate from '../assets/progate.png';
-import logoauto from '../assets/logo-auto.png';
-import autoroom from '../assets/autoroom.png';
+import Gloding from '../assets/gloding.png';
+import styles from '../styles/experienced.module.scss';
+import Amimono from '../assets/amimono.png';
+import Mirai from '../assets/mirai.png';
+import Art from '../assets/art.png';
+import Vogue from '../assets/vogue.png';
 
-const data = {
-  result: [
-    {
-      id: 1,
-      office: 'Gloding Inc',
-      division: 'Frontend Engineer',
-      nation: 'Japan',
-      year: '2022 - 2023',
-      logo: gloding,
-      projects: [
+const techList = {
+    result: [
         {
-          nameProject: 'Mirai',
-          url:'',
-          github:'',
-          logo_project: assetsmirai,
-          description: 'Fitur ini adalah  Education List yang terdiri dari untuk tingkat sd,  smp, sma. Pada fitur ini saya membuat  layout dengan dinamic code dan menggunakan data dummy. Fitur ini telah bersifat responsive. pembuatan layout ini berlangsung selama 2 hari',
-          techs: ['Next.js', 'Javascript', 'SASS', 'MUI', 'Bootstrap', 'Git/Github', 'Vercel', 'Scrum', 'Atlassian', 'Slack'],
-          image: projectmirai,
+            id: 1,
+            title: 'HTML'
         },
         {
-          nameProject: 'Amimono',
-          url:'',
-          github:'',
-          logo_project: assetsamimono,
-          description: 'Web Amimono ini merupakan  web terkait seni tangan yang terdapat fitur artikel, news, story, user, login, Q&A, dan work.  Web ini telah bersifat responsive pada web ini saya diberi tugas untuk merapikan bagian-bagian tertentu. Seperti mengganti font, memperbaiki menu publik dan menu user. Lalu saya menggunakan Jquerry untuk kondisi tertentu seperti ‘jika memiliki foto akan ditampilkan beserta tulisan dan jika tidak memiliki foto maka yang ditampilkan hanya tulisan saja’.',
-          techs: ['Java', 'CSS', 'JSF', 'Payara', 'JQuerry', 'Scrum', 'Atlassian', 'Slack'],
-          image: projectamimono
+            id: 2,
+            title: 'Javascript'
         },
         {
-          nameProject: 'Nihonvogue',
-          url:'',
-          github:'',
-          logo_project: assetsvogue,
-          description: 'Fitur ini adalah  Education List yang terdiri dari untuk tingkat sd,  smp, sma. Pada fitur ini saya membuat  layout dengan dinamic code dan menggunakan data dummy. Fitur ini telah bersifat responsive. pembuatan layout ini berlangsung selama 2 hari',
-          techs: ['Java', 'CSS', 'JSF', 'Payara', 'JQuerry', 'Scrum', 'Atlassian', 'Slack'],
-          image: projectvogue
+            id: 3,
+            title: 'Atlassian (Jira)'
         },
         {
-          nameProject: 'SEO',
-          url:'',
-          github:'',
-          logo_project: '',
-          description: 'SEO adalah singkatan dari Search Engine Optimization, yaitu langkah optimasi yang dilakukan agar website berada di hasil teratas mesin pencari, terutama Google. Kalau SEO website Anda bagus, nantinya website Anda akan langsung muncul di halaman pertama hasil pencari ketika calon pengunjung mencari kata kunci (keyword) tertentu di Google. Dengan begitu, website Anda pun akan ramai pengunjung. Selain itu, SEO juga bisa menjadi strategi digital marketing yang efektif dan hemat untuk membantu Anda meningkatkan traffic website dan konversi',
-          techs: ['Microsoft Excel', 'Semrush', 'VS Code', 'Scrum', 'Atlassian', 'Slack'],
-          image: assetsseo
-        }]
-    },
-    {
-      id: 2,
-      office: 'Alterra Academy',
-      division: 'Frontend Engineer',
-      nation: 'Indonesia',
-      year: '2022',
-      logo: alterra,
-      projects: [
-        {
-          nameProject: 'MN Room',
-          url:'https://mnroom.vercel.app/',
-          github:'https://github.com/Capstone-MNRoom/Capstone-MNRoom-FE',
-          logo_project: logomn,
-          description: 'Website yang dapat melakukan sistem booking ruangan untuk pengadaan suatu acara yang telah dilengkapi dengan CRUD dan sistem pembayaran',
-          techs: ['Next.js', 'Javascript', 'Tailwind', 'MUI', 'Bootstrap', 'Git/Github', 'CSS', 'LottieFiles', 'IconFinder', 'Figma', 'Postman', 'Vercel', 'Trello', 'Scrum', 'Discord'],
-          image: mnroom,
+            id: 4,
+            title: 'Jquerry'
         },
         {
-          nameProject: 'Gomeet',
-          url:'',
-          github:'https://github.com/wulandaridewi69/Alta-F6-G4-Gomeet',
-          logo_project: logogo,
-          description: 'Website ini dapat digunakan untuk mengadakan suatu event yang dapat dilakukan dengan sistem jual beli. Tentunya website ini dilengkapi fitur CRUD, sistem pembayaran, map location, dan chat',
-          techs: ['Next.js', 'Javascript', 'Tailwind', 'MUI', 'Bootstrap', 'Git/Github', 'CSS', 'LottieFiles', 'Figma', 'Postman', 'Vercel', 'Trello', 'Scrum', 'Discord'],
-          image: gomeet
+            id: 5,
+            title: 'React.js'
         },
         {
-          nameProject: 'Seebooks',
-          url:'https://seebooks-ecommerce.surge.sh/',
-          github:'https://github.com/wulandaridewi69/Alta-fe6-project2-seebooks_ecommerce',
-          logo_project: logose,
-          description: 'Website ini merupakan jual beli buku, baik untuk buku baru maupun buku bekas. Website ini telah dilengkapi CRUD dan payment',
-          techs: ['React.js', 'Javascript', 'Tailwind', 'MUI', 'Bootstrap', 'Git/Github', 'CSS', 'LottieFiles', 'Figma', 'Postman', 'Vercel', 'Trello', 'Scrum', 'Discord'],
-          image: seebooks
+            id: 6,
+            title: 'Java'
         },
         {
-          nameProject: 'To Do List',
-          url:'https://todo-list-app-opal-delta.vercel.app/',
-          github:'https://github.com/Alta-FE6-Wanda/todo-list-app',
-          logo_project: logoto,
-          description: 'Web yang dapat digunakan untuk membuat kegiatan yang akan dilakukan dengan dilengkapi fitur CRUD dan search',
-          techs: ['React.js', 'Javascript', 'Tailwind', 'MUI', 'Bootstrap', 'Git/Github', 'CSS', 'Figma', 'Postman', 'Vercel', 'Discord'],
-          image: todo
-        }]
-    },
-    {
-      id: 3,
-      office: 'Progate',
-      division: 'Frontend',
-      nation: 'Indonesia',
-      year: '2020',
-      logo: progate,
-      projects: [
+            id: 7,
+            title: 'CSS'
+        },
         {
-          nameProject: 'Auto Room',
-          url:'https://autoroom.surge.sh/',
-          github:'https://github.com/wulandaridewi69/dts-progate-c54',
-          logo_project: logoauto,
-          description: 'Website ini (landing page) digunakan sebagai wadah informasi seputar produk terbaru, promo dan potongan harga, serta event-event menarik secara eksklusif',
-          techs: ['HTML5', 'Bootstrap', 'Git/Github', 'CSS', 'FlatIcon', 'Adobe Photoshop', 'Surge', 'Scrum', 'Discord'],
-          image: autoroom,
-        }
-      ]
-    }
-  ]
+            id: 8,
+            title: 'SASS'
+        },
+        {
+            id: 9,
+            title: 'MUI'
+        },
+        {
+            id: 10,
+            title: 'Figma'
+        },
+        {
+            id: 11,
+            title: 'Payara'
+        },
+        {
+            id: 12,
+            title: 'Vercel'
+        },
+        {
+            id: 13,
+            title: 'Netbeans'
+        },
+        {
+            id: 14,
+            title: 'VS Code'
+        },
+        {
+            id: 15,
+            title: 'Sourch Tree'
+        },
+        {
+            id: 16,
+            title: 'NPM'
+        },
+        {
+            id: 17,
+            title: 'Git/Github'
+        },
+        {
+            id: 18,
+            title: 'Slack'
+        },
+    ]
 }
 
 const Experienced = () => {
-  return (
-    <div>
-      {data.result.map((item) => {
-        return <Projects
-          key={item.id}
-          id={item.id}
-          division={item.division}
-          year={item.year}
-          logo={item.logo}
-          projects={item.projects}
-        />
-      })}
-    </div>
-  )
+    return (
+        <div>
+            <div className={styles.sub}>
+                <h4>Experienced</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="311" height="20" viewBox="0 0 311 20" fill="none">
+                    <path d="M3 9.99999L18.0732 14.7676C28.6021 18.0978 40.05 16.7978 49.5641 11.1915L50.988 10.3524C61.8866 3.93027 75.3564 3.70035 86.4678 9.74681L89.3599 11.3206C99.1869 16.6681 111.154 16.2003 120.534 10.102V10.102C130.079 3.89622 142.287 3.52925 152.188 9.15057L154.298 10.3485C164.799 16.311 177.699 16.1493 188.048 9.92545V9.92545C198.264 3.78139 210.978 3.53971 221.42 9.29106L222.763 10.031C233.976 16.2071 247.622 15.9843 258.627 9.4453L259.922 8.6759C269.229 3.14605 280.426 1.76293 290.799 4.86162L308 10" stroke="url(#paint0_linear_515_1533)" stroke-width="6" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_515_1533" x1="81.1097" y1="20" x2="214.268" y2="20" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#95D2FF" />
+                            <stop offset="1" stop-color="#ECCFFA" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div className={styles.desc}>
+                <div className={styles.logo}>
+                    <Image src={Gloding} />
+                    <p className={styles.descYear}>2022-2023</p>
+                </div>
+                <div>
+                    <p className={styles.descLogo}>
+                        Gloding Inc. is a consulting + creating company specializing in IT, made up of a team that transcends national borders,
+                        including Japan, Indonesia, France, the United States, and the United Kingdom.
+                        Our members with a global perspective provide support in every phase,
+                        from various types of consulting to realize business improvements, to system design and construction,
+                        to post-installation operation and maintenance.
+                    </p>
+                </div>
+
+                <div className='mb-12'>
+                    <p className={styles.title}>Tasks</p>
+                    <p className={styles.titleDesc}>On the Amimono, JHIA, Handmate and Nihonvogue projects,
+                        the  tasks I worked on were improving typhography, making layouts,  making them responsive,
+                        making user menus for mobile  frames, making public menus for mobile frames, making Jquerry for conditioning,
+                        learning advanced CSS, learning to use Java with the IDE used is Netbeans.
+                        In the Mirai project, I created an appList layout using the tech stack, namely next.js, Bootstrap, MUI, Vercel.
+                        I work on SEO tasks on the Amimono, JHIA, Nihonvogue, and Handmate projects to make it easier for search engines
+                        to find pages/websites and place them on the first page in search engines with keywords specified by the user.
+                        In the project above, I also learned about UI/UX and the use of Figma, so that later I could equate the resulting
+                        layout with the existing design.
+                    </p>
+                </div>
+                <div>
+                    <p className={styles.title}>Tech Stack</p>
+                    <div className={styles.techLists}>
+                        {techList.result.map((item) => {
+                            return <div className={styles.listItem} key={item.id}>
+                                <p>{item.title}</p>
+                            </div>
+                        })}
+                    </div>
+                </div>
+                <div>
+                    <p className={styles.title}>Projects</p>
+                    <div className={styles.project}>
+                        <Image src={Amimono} className='bg-white' />
+                        <Image src={Art} />
+                        <Image src={Vogue} className='bg-white' />
+                        <Image src={Mirai} />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
 }
 
 export default Experienced;
